@@ -8,5 +8,5 @@ print("{:d}".format(my_list[i]), end="")
 count += 1
 except IndexError:
 break
-print()
-return count 
+print ("")
+return (count) 
