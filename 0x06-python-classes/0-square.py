@@ -2,4 +2,5 @@
 "0-square.py define"
 
 class Square:
+
 pass
