@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Define a class square."""
+"0-square.py define"
 
 class Square:
-"""Represent a square."""
-
+    """Class Kilonzo"""
+    pass
