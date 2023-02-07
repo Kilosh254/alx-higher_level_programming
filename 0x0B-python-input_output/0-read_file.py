@@ -1,5 +1,11 @@
 #!/usr/bin/python3
+"""module for read_file
+    """
+
+
 def read_file(filename=""):
-    with open(filename, encoding='utf-8') as f:
-        for line in f:
-            print(line, end='')
+    """read text file with utf-8
+    """
+    with open(filename, "r", encoding="utf-8") as file_tmp:
+        data_read = file_tmp.read()
+    print(data_read, end="")
