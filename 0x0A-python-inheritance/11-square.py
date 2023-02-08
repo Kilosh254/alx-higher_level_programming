@@ -1,13 +1,26 @@
 #!/usr/bin/python3
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
-Rectangle = __import__('9-rectangle').Rectangle
+"""class Square
+    """
+
+
+Rectangle = __import__("9-rectangle").Rectangle
 
 
 class Square(Rectangle):
+    """ class squares
+    """
+
     def __init__(self, size):
-        self.integer_validator(size, size)
-        super().__init__(size, size)
+        """initialize a square
+        Arguments:
+            size {int}
+        """
+
+        self.integer_validator("size", size)
         self.__size = size
+        super().__init__(self.__size, self.__size)
 
     def __str__(self):
-        return '[Square] ' + str(self.__size) + '/' + str(self.__size)
+        """return str
+        """
+        return "[Square] {:d}/{:d}".format(self.__size, self.__size)
